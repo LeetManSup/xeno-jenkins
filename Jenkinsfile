@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'apt update && apt install g++'
                 sh 'g++ -o myapp main.cpp'
             }
         }
